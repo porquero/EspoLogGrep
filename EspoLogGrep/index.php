@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $date = trim($_POST['date']);
     }
 
-    $file = __DIR__ . "/../../../data/logs/espo-$date.log";
+    $file = __DIR__ . "/../../data/logs/espo-$date.log";
 
     $cmd = "cat " . escapeshellarg($file);
 
